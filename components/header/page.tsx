@@ -40,7 +40,7 @@ function Index() {
 
   useEffect(() => {
     getCategories();
-  }, []);
+  });
 
   return (
     <header>

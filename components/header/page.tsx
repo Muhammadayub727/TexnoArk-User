@@ -64,7 +64,7 @@ function Index() {
                 Rus
               </li>
               <li className="px-[10px] py-[4px] bg-[white] rounded-lg cursor-pointer font-medium text-[#240E0066]">
-                O'zb
+                Ozb
               </li>
               <li className="px-[10px] py-[4px] bg-[white] rounded-lg cursor-pointer font-medium text-[#240E0066]">
                 Eng

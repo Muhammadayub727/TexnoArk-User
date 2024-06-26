@@ -23,9 +23,9 @@ function page() {
         <p className="mt-[36px] text-[16px] mb-[16px] font-bold">
           Iphone 14 Pro Max
         </p>
-        <h4 className="font-bold text-[18px] ">7 893 000 so'm</h4>
+        <h4 className="font-bold text-[18px] ">7 893 000 som</h4>
         <p className="text-[#1EB91E] mt-[11px] mb-[19px] bg-[#1EB91E14] inline-block py-2 px-4 rounded-lg">
-          1 045 000 so'mdan/12 oy
+          1 045 000 somdan/12 oy
         </p>
         <div className="flex items-center gap-[10px]">
           <Button className="btn_product">

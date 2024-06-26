@@ -3,6 +3,7 @@
     color: white !important;
     border-color: #1EB91E !important;
     transition: none !important;
+
 }
 
 .search_input{
@@ -16,3 +17,23 @@
     border: none;
 }
 
+/* style.css */
+.drawer {
+    margin-top: 50px;
+    transition: all 0.8s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%);
+  }
+  
+  .drawer.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .close-icon-btn {
+    background-color: red;
+    color: white;
+    border-color: red;
+  }

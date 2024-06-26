@@ -13,7 +13,7 @@ import Link from "next/link";
 
 function page() {
   return (
-    <Link href={'/product'}>
+    <Link href={'/product-detail'}>
       <div className="w-[295px] h-[470px] pt-[50px] pb-[36px] px-[30px] bg-white rounded-xl justify-between ml-[20px]">
         <Image
           src={Product}

@@ -20,6 +20,7 @@ import {
 import "./style.css";
 import useCategoryStore from '@/store/categories/page';
 import useSubCategoryStore from "@/store/sub-categories/page";
+import Link from "next/link";
 
 const listItems = [
   { id: 1, name: "Biz Haqimizda" },
@@ -144,7 +145,9 @@ function Index() {
                   <ShoppingCartOutlined className="text-[20px] text-[black]" />
                 </Avatar>
               </Badge>
-              <Avatar size="large" icon={<UserOutlined className="text-[20px] text-[black]" />} className="bg-[#F0F0F0] cursor-pointer" />
+              <Link href={"/login"}>
+                <Avatar size="large" icon={<UserOutlined className="text-[20px] text-[black]" />} className="bg-[#F0F0F0] cursor-pointer" />
+              </Link>
             </div>
           </div>
         </Container>

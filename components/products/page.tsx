@@ -1,7 +1,8 @@
 import {
-  ArrowRightOutlined,
+  // ArrowRightOutlined,
   BarChartOutlined,
   HeartOutlined,
+  ShoppingCartOutlined,
 } from "@ant-design/icons";
 import { Avatar, Badge, Button } from "antd";
 import Image from "next/image";
@@ -13,7 +14,7 @@ import Link from "next/link";
 function page() {
   return (
     <Link href={'/product'}>
-      <div className="w-[305px] h-[490px] pt-[50px] pb-[36px] px-[30px] bg-white rounded-xl">
+      <div className="w-[305px] h-[490px] pt-[50px] pb-[36px] px-[30px] bg-white rounded-xl justify-between">
         <Image
           src={Product}
           alt="IMG"
@@ -26,9 +27,9 @@ function page() {
         <p className="text-[#1EB91E] mt-[11px] mb-[19px] bg-[#1EB91E14] inline-block py-2 px-4 rounded-lg">
           1 134 890 so’mdan/12 oy
         </p>
-        <div className="flex items-center justify-between gap-[10px]">
+        <div className="flex items-center gap-[10px]">
           <Button className="btn_product">
-            Hammasi <ArrowRightOutlined />
+            Savat<ShoppingCartOutlined />
           </Button>
           <Badge>
             <Avatar

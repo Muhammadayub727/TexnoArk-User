@@ -4,7 +4,7 @@ import Container from "../container/page";
 import Image from "next/image";
 import LOGO from "../../assets/LOGO.png";
 import { Button, Input, Avatar, Badge } from "antd";
-import 'react-toastify/dist/ReactToastify.css';
+// import 'react-toastify/dist/ReactToastify.css';
 
 import { 
   ArrowRightOutlined, 
@@ -32,7 +32,7 @@ function Index() {
   const [open, setOpen] = useState(false);
   const { categories, getCategories } = useCategoryStore();
   const { subcategories, getSubCategories } = useSubCategoryStore();
-  const [activeItemId, setActiveItemId] = useState<number | null>(null);
+  const [activeItemId, setActiveItemId] = useState<number | any>();
 
   async function getSub(id: number) {
     await getSubCategories(id);
@@ -51,7 +51,7 @@ function Index() {
               {listItems.map(item => (
                 <li 
                   key={item.id} 
-                  className={`text-[14px] font-medium cursor-pointer ${activeItemId === item.id ? 'active' : ''}`}
+                  className={`text-[14px] font-medium cursor-pointer ${activeItemId === item.id ? 'active' : 'red'}`}
                   onClick={() => setActiveItemId(item.id)}
                 >
                   {item.name}

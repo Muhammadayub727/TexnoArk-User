@@ -22,7 +22,9 @@ export default function App() {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
+        navigation={
+          true
+        }
         className="mySwiper"
       >
         <SwiperSlide><ProductCard/></SwiperSlide>

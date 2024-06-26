@@ -4,3 +4,22 @@
   height: 100%;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  width: 20px;
+  height: 20px;
+  color: rgb(233, 232, 232);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.swiper-button-prev {
+  left: 20px; 
+}
+
+.swiper-button-next {
+  right: 10px;
+}

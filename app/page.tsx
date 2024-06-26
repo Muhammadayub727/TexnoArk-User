@@ -5,7 +5,7 @@ import Container from '../components/container/page'
 import './globals.css'
 import { Button } from 'antd';
 import Image from 'next/image';
-import Footer_Banner from '../assets/Footer_Banner.png'
+import Footer_Banner from '../assets/cute_safety.svg'
 import Swiper from '../components/swiper/page'
 import useCategoryStore from '@/store/categories/page';
 import { useEffect } from 'react';
@@ -98,9 +98,14 @@ export default function Home() {
 
       <div className="mt-[67px]">
         <Container>
-          <div>
-            <Image src={Footer_Banner} alt="Banner" />
-          </div>
+        {/* </div> */}
+        <div className="w-full p-[80px] bg-yellow-300 flex items-center justify-between rounded-md my-[67px]">
+                  <div>
+                    <p className="text-[18px] text-blue-500">Mahsulot yoqmadi - pulni qaytarib beramiz</p>
+                    <h2 className="text-[36px] text-blue-500 font-[900]">Kamchilik bormi yoki etkazib berishda mahsulot yoqmadimi?</h2>
+                  </div>
+                  <Image src={Footer_Banner} alt="img" width={240} height={240}/>
+        </div>
         </Container>
       </div>
     </>

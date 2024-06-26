@@ -14,7 +14,7 @@ import Link from "next/link";
 function page() {
   return (
     <Link href={'/product'}>
-      <div className="w-[305px] h-[490px] pt-[50px] pb-[36px] px-[30px] bg-white rounded-xl justify-between">
+      <div className="w-[295px] h-[470px] pt-[50px] pb-[36px] px-[30px] bg-white rounded-xl justify-between ml-[20px]">
         <Image
           src={Product}
           alt="IMG"

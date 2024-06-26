@@ -20,10 +20,8 @@
 /* style.css */
 .drawer {
     margin-top: 50px;
-    transition: all 0.8s ease-in-out;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-100%);
   }
   
   .drawer.open {

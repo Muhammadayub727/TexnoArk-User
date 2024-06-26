@@ -10,6 +10,11 @@ import Swiper from '../components/swiper/page'
 import useCategoryStore from '@/store/categories/page';
 import { useEffect } from 'react';
 
+import Apple from "@/assets/apple.png"
+import Huawei from "@/assets/huawei.png"
+import Artel from "@/assets/Artel.png"
+
+
 export default function Home() {
   //Datas
   const data = [
@@ -19,6 +24,15 @@ export default function Home() {
     { id: 4, name: "Konditsanerlar" },
     { id: 5, name: "Kir yuvish mashinasi" },
     { id: 6, name: "Barcha Mahsulotlar" },
+  ];
+
+  const dataAnimation = [
+    {title: "Apple" , bg: "#fff" , img: Apple},
+    {title: "Huawei" , bg: "#fff" , img: Huawei},
+    {title:"Artel", bg: "#fff" , img:Artel },
+    {title: "Apple" , bg: "#fff" , img: Apple},
+    {title: "Huawei" , bg: "#fff" , img: Huawei},
+    {title:"Artel", bg: "#fff" , img:Artel },
   ];
 
   const { categories, getCategories } = useCategoryStore();
@@ -96,16 +110,31 @@ export default function Home() {
         </Container>
       </div>
 
+      <div className="mt-[64px]">
+        <Container>
+          <div className="flex justify-between items-center">
+            <h1 className="font-bold text-[32px]">Brands</h1>
+          </div>
+          <div className="mt-[24px] grid grid-cols-6 gap-[20px]">
+            {dataAnimation.map((item, index) => (
+              <div key={index} className="flex items-center p-[20px] bg-white rounded-xl">
+                <Image src={item.img} alt={item.title}  className='ml-[50px] w-[70px]' />
+                
+              </div>
+            ))}
+          </div>
+        </Container>
+      </div>
+
       <div className="mt-[67px]">
         <Container>
-        {/* </div> */}
-        <div className="w-full p-[80px] bg-yellow-300 flex items-center justify-between rounded-md my-[67px]">
-                  <div>
-                    <p className="text-[18px] text-blue-500">Mahsulot yoqmadi - pulni qaytarib beramiz</p>
-                    <h2 className="text-[36px] text-blue-500 font-[900]">Kamchilik bormi yoki etkazib berishda mahsulot yoqmadimi?</h2>
-                  </div>
-                  <Image src={Footer_Banner} alt="img" width={240} height={240}/>
-        </div>
+          <div className="w-full p-[80px] bg-yellow-300 flex items-center justify-between rounded-md my-[67px]">
+            <div>
+              <p className="text-[18px] text-blue-500">Mahsulot yoqmadi - pulni qaytarib beramiz</p>
+              <h2 className="text-[36px] text-blue-500 font-[900]">Kamchilik bormi yoki etkazib berishda mahsulot yoqmadimi?</h2>
+            </div>
+            <Image src={Footer_Banner} alt="img" width={240} height={240}/>
+          </div>
         </Container>
       </div>
     </>

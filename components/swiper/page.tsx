@@ -25,10 +25,10 @@ export default function App() {
           clickable: true,
         }}
         navigation={true}
-        // autoplay={{
-        //   delay: 1000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         modules={[Autoplay, FreeMode, Pagination, Navigation]}
         className="mySwiper"
       >

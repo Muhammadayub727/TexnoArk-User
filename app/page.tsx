@@ -56,7 +56,7 @@ export default function Home() {
           <div className="flex justify-between items-center">
             <h1 className="font-bold text-[32px]">Popular Product</h1>
             <Button className="btn_all">
-              Hammasi <ArrowRightOutlined />
+              All Product <ArrowRightOutlined />
             </Button>
           </div>
 
@@ -69,9 +69,9 @@ export default function Home() {
       <div className="mt-[64px]">
         <Container>
           <div className="flex justify-between items-center">
-            <h1 className="font-bold text-[32px]">Bestsellers</h1>
+            <h1 className="font-bold text-[32px]">BestSellers</h1>
             <Button className="btn_all">
-              Hammasi <ArrowRightOutlined />
+              All Product <ArrowRightOutlined />
             </Button>
           </div>
 
@@ -86,7 +86,7 @@ export default function Home() {
           <div className="flex justify-between items-center">
             <h1 className="font-bold text-[32px]">Promotional product</h1>
             <Button className="btn_all">
-              Hammasi <ArrowRightOutlined />
+              All Product <ArrowRightOutlined />
             </Button>
           </div>
 

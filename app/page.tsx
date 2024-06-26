@@ -13,12 +13,12 @@ import { useEffect } from 'react';
 export default function Home() {
   //Datas
   const data = [
-    { id: 1, name: "Smartfonlar" },
+    { id: 1, name: "Smartfonlar"},
     { id: 2, name: "Televizorlar" },
     { id: 3, name: "Muzlatkichlar" },
-    { id: 4, name: "Kir yuvish mashinasi" },
-    { id: 5, name: "Smartfonlar" },
-    { id: 6, name: "Kir yuvish mashinasi" },
+    { id: 4, name: "Konditsanerlar" },
+    { id: 5, name: "Kir yuvish mashinasi" },
+    { id: 6, name: "Barcha Mahsulotlar" },
   ];
 
   const { categories, getCategories } = useCategoryStore();

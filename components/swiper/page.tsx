@@ -10,20 +10,19 @@ import 'swiper/css/navigation';
 import ProductCard from '../products/page';
 import './style.css';
 
-
-
 export default function App() {
   return (
     <>
       <Swiper
         slidesPerView={4}
         spaceBetween={30}
-        freeMode={true}
+        freeMode={false} 
+        centeredSlides={true} 
         loop={true}
         pagination={{
           clickable: true,
         }}
-        navigation={true} // Enable navigation
+        navigation={true}
         className="mySwiper"
       >
         <SwiperSlide><ProductCard/></SwiperSlide>

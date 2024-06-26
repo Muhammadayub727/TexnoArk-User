@@ -6,7 +6,7 @@ import {
 import { Avatar, Badge, Button } from "antd";
 import Image from "next/image";
 import React from "react";
-import Product from "../../images/product.png";
+import Product from "../../assets/product.png";
 import "./style.css";
 import Link from "next/link";
 

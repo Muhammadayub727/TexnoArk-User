@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '../container/page'
-import Logo from '../../images/LOGO.png'
+import Logo from '../../assets/LOGO.png'
 import Image from 'next/image'
 import { FacebookOutlined, InstagramOutlined, TwitterOutlined, WhatsAppOutlined } from '@ant-design/icons'
 

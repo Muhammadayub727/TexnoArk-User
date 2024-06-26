@@ -17,7 +17,7 @@ export default function App() {
   return (
     <>
       <Swiper
-        slidesPerView={4}
+        slidesPerView={5}
         spaceBetween={30}
         freeMode={true}
         loop={true}

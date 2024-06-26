@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import Container from "../container/page";
 import Image from "next/image";
-import LOGO from "../../images/LOGO.png";
+import LOGO from "../../assets/LOGO.png";
 import { Button, Input, Avatar, Badge } from "antd";
 import { ArrowRightOutlined, BarChartOutlined, CloseSquareOutlined, HeartOutlined, PhoneOutlined, SearchOutlined, ShoppingCartOutlined, UnorderedListOutlined, UserOutlined } from "@ant-design/icons";
 import "./style.css";
@@ -45,12 +45,12 @@ function Index() {
               </li>
             </ul>
             <ul className="flex items-center gap-[15px]">
-              <li className="text-[14px] font-medium ">+998 71 300 30 30</li>
+              <li className="text-[14px] font-medium ">+998 91 043 45 49</li>
               <li className="px-[10px] py-[4px] bg-[white] rounded-lg cursor-pointer font-medium text-[#240E0066]">
                 Rus
               </li>
               <li className="px-[10px] py-[4px] bg-[white] rounded-lg cursor-pointer font-medium text-[#240E0066]">
-                Ozb
+                O'zb
               </li>
               <li className="px-[10px] py-[4px] bg-[white] rounded-lg cursor-pointer font-medium text-[#240E0066]">
                 Eng
@@ -76,21 +76,22 @@ function Index() {
               <Button onClick={() => setOpen(!open)} className="category_btn bg-[#1EB91E] w-[180px] text-white text-[14px] font-bold py-[15px] px-[36px] h-[46px]">
                   {
                     open?
-                    <CloseSquareOutlined className=" text-[18px]"/>
+                    <CloseSquareOutlined className=" text-[24px]"/>
                     :
                     <UnorderedListOutlined className=" text-[18px] rotate-180" />
                   }
                   {
                     open?
-                    "Bekor qilish"
+                    "Закрывать"
                     :
-                    "Kategoriya"
+                    "Категория"
                   }
               </Button>
               <Input
-                placeholder="Хочу купить..."
-                className="search_input"
+                placeholder="Kупить xочу.. "
+                className="search_input text-[14px] font-medium w-[520px] h-[46px] py-[15px] px-[36px] rounded-md"
                 prefix={<SearchOutlined />}
+                // suffix={<CloseSquareOutlined />}
               />
             </div>
 
@@ -113,9 +114,9 @@ function Index() {
                     {
                       subcategories.map((e,i) => {
                         return (
-                           <div key={i}>
+                          <div key={i}>
                                 <p className="font-semibold text-[16px] mb-4 cursor-pointer">{e.name}</p>
-                           </div>
+                          </div>
                         )
                       })
                     }

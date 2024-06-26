@@ -3,8 +3,8 @@ import { Carousel } from 'antd';
 import Container from '../container/page';
 import './style.css';
 import Image from 'next/image';
-import Text_img from '../../images/caruseltext.png';
-import Img from '../../images/Carusel.png';
+import Text_img from '../../assets/caruseltext.png';
+import Img from '../../assets/Carusel.png';
 
 const App: React.FC = () => (
   <>

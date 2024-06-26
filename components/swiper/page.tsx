@@ -32,6 +32,7 @@ export default function App() {
         modules={[Autoplay, FreeMode, Pagination, Navigation]}
         className="mySwiper"
       >
+        
         <SwiperSlide><ProductCard/></SwiperSlide>
         <SwiperSlide><ProductCard/></SwiperSlide>
         <SwiperSlide><ProductCard/></SwiperSlide>

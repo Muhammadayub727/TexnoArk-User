@@ -13,10 +13,10 @@ function page() {
                     <Image src={Logo} alt='Logo' width={240} height={68}/>
                     <h1 className='text-[18px] font-bold mt-[32px] mb-[17px]'>Bizni ijtimoiyi tarmoqlar</h1>
                     <div className='flex gap-[12px]'>
-                        <InstagramOutlined className='text-[30px] w-[50px] h-[44px] bg-[#F0F0F0] py-[12px] px-[15px] cursor-pointer hover:text-[red] duration-200 rounded-lg' />
-                        <FacebookOutlined className='text-[30px] w-[50px] h-[44px] bg-[#F0F0F0] py-[12px] px-[15px] cursor-pointer hover:text-[blue] duration-200 rounded-lg' />
-                        <TwitterOutlined className='text-[30px] w-[50px] h-[44px] bg-[#F0F0F0] py-[12px] px-[15px] cursor-pointer hover:text-[#76bdef] duration-200 rounded-lg' />
-                        <WhatsAppOutlined className='text-[30px] w-[50px] h-[44px] bg-[#F0F0F0] py-[12px] px-[15px] cursor-pointer hover:text-[#6df56d] duration-200 rounded-lg' />
+                        <InstagramOutlined className='text-[30px] w-[50px] h-[44px] bg-[#F0F0F0] py-[12px] px-[15px] cursor-pointer ' />
+                        <FacebookOutlined className='text-[30px] w-[50px] h-[44px] bg-[#F0F0F0] py-[12px] px-[15px] cursor-pointer ' />
+                        <TwitterOutlined className='text-[30px] w-[50px] h-[44px] bg-[#F0F0F0] py-[12px] px-[15px] cursor-pointer' />
+                        <WhatsAppOutlined className='text-[30px] w-[50px] h-[44px] bg-[#F0F0F0] py-[12px] px-[15px] cursor-pointer' />
                     </div>
                 </div>
                  <div>

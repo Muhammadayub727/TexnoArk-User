@@ -15,15 +15,17 @@ import Huawei from "@/assets/huawei.png"
 import Artel from "@/assets/Artel.png"
 
 
+
+
 export default function Home() {
   //Datas
   const data = [
-    { id: 1, name: "Smartfonlar"},
-    { id: 2, name: "Televizorlar" },
-    { id: 3, name: "Muzlatkichlar" },
-    { id: 4, name: "Konditsanerlar" },
+    { id: 1, name: "Smartfonlar",img:Apple},
+    { id: 2, name: "Televizorlar"},
+    { id: 3, name: "Muzlatkichlar"},
+    { id: 4, name: "Konditsanerlar"},
     { id: 5, name: "Kir yuvish mashinasi" },
-    { id: 6, name: "Barcha Mahsulotlar" },
+    { id: 6, name: "Barcha Mahsulotlar"},
   ];
 
   const dataAnimation = [

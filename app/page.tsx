@@ -13,6 +13,7 @@ import { useEffect } from 'react';
 import Apple from "@/assets/apple.png"
 import Huawei from "@/assets/huawei.png"
 import Artel from "@/assets/Artel.png"
+import Link from 'next/link';
 
 
 
@@ -54,14 +55,16 @@ export default function Home() {
         <Container>
           <div className="flex items-center flex-wrap justify-between gap-[20px]">
             {data.map((item, i) => (
-              <div
-                key={item.id}
-                className="flex items-center justify-between w-[440px] h-[120px] py-[45px] px-[59px] bg-white rounded-xl cursor-pointer card"
-              >
-                <BuildOutlined className="w-[60px] h-[60px] bg-[#FF800B1A] rounded-full p-[20px] text-[#D55200]" />
-                <p>{item.name}</p>
-                <ArrowRightOutlined />
-              </div>
+              <Link href={"/category"}>
+                  <div
+                  key={item.id}
+                  className="flex items-center justify-between w-[440px] h-[120px] py-[45px] px-[59px] bg-white rounded-xl cursor-pointer card"
+                >
+                  <BuildOutlined className="w-[60px] h-[60px] bg-[#FF800B1A] rounded-full p-[20px] text-[#D55200]" />
+                  <p>{item.name}</p>
+                  <ArrowRightOutlined />
+                </div>
+              </Link>
             ))}
           </div>
         </Container>

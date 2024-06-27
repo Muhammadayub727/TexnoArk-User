@@ -26,7 +26,7 @@ export default function App() {
         }}
         navigation={true}
         autoplay={{
-          delay: 3000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, FreeMode, Pagination, Navigation]}

@@ -50,18 +50,18 @@ export default function Home() {
 
       <div className="mt-[60px]">
         <Container>
-          <div className="flex items-center flex-wrap justify-between gap-[20px]">
+          <Link href={"/category"}>
+            <div className="flex items-center flex-wrap justify-between gap-[20px]">
             {data.map((item) => (
-              <Link key={item.id} href={"/category"}>
-                <div className="flex items-center justify-between w-[440px] h-[120px] py-[45px] px-[59px] bg-white rounded-xl cursor-pointer card">
+                <div key={item.id}  className="flex items-center justify-between w-[440px] h-[120px] py-[45px] px-[59px] bg-white rounded-xl cursor-pointer card">
                   <BuildOutlined className="w-[60px] h-[60px] bg-[#FF800B1A] rounded-full p-[20px] text-[#D55200]" />
                   <p>{item.name}</p>
                   <ArrowRightOutlined />
                 </div>
-              </Link>
             ))}
           </div>
-        </Container>
+        </Link>
+      </Container>
       </div>
 
       <div className="mt-[64px]">

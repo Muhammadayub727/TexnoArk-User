@@ -11,7 +11,7 @@ import {
   BarChartOutlined, 
   CloseSquareOutlined, 
   HeartOutlined, 
-  PhoneOutlined, 
+  BuildOutlined, 
   SearchOutlined, 
   ShoppingCartOutlined, 
   UnorderedListOutlined, 
@@ -111,11 +111,11 @@ function Index() {
                   <div 
                     key={i} 
                     onClick={() => getSub(e.id)} 
-                    className="hover:bg-[#FF6F14] hover:text-white mt-[10px] flex items-center justify-between w-[440px] h-[50px] py-[35px] px-[59px] bg-[#F0F0F0] rounded-xl cursor-pointer card"
+                    className="hover:bg-[#FF6F14] duration-500 hover:text-white mt-[10px] flex items-center justify-between w-[440px] h-[50px] py-[35px] px-[59px] bg-[#F0F0F0] rounded-xl cursor-pointer card"
                   >
-                    <PhoneOutlined className="w-[60px] h-[60px] text-[20px]" />
+                    <BuildOutlined className="w-[60px] h-[60px] text-[20px]" />
                     <p>{e.name}</p>
-                    <ArrowRightOutlined />
+                    <BuildOutlined />
                   </div>
                 ))}
               </div>

@@ -11,7 +11,7 @@ function page() {
             <div className='flex bg-white pt-[60px] px-[80px] rounded-xl h-[400px] justify-between'>
                 <div>
                     <Image src={Logo} alt='Logo' width={240} height={68}/>
-                    <h1 className='text-[18px] font-bold mt-[32px] mb-[17px]'>Bizni ijtimoiyi tarmoqlar</h1>
+                    <h1 className='text-[18px] font-bold mt-[32px] mb-[17px]'>Bizni ijtimoiy tarmoqlar</h1>
                     <div className='flex gap-[12px]'>
                         <InstagramOutlined className='text-[30px] w-[50px] h-[44px] bg-[#F0F0F0] py-[12px] px-[15px] cursor-pointer ' />
                         <FacebookOutlined className='text-[30px] w-[50px] h-[44px] bg-[#F0F0F0] py-[12px] px-[15px] cursor-pointer ' />

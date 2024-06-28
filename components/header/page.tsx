@@ -22,13 +22,6 @@ import useCategoryStore from '@/store/categories/page';
 import useSubCategoryStore from "@/store/sub-categories/page";
 import Link from "next/link";
 
-const listItems = [
-  { id: 1, name: "Biz Haqimizda" },
-  { id: 2, name: "Yetkazib berish" },
-  { id: 3, name: "Shartnoma shartlari" },
-  { id: 4, name: "Bizning kafolatlar" },
-];
-
 function Index() {
   const [open, setOpen] = useState(false);
   const { categories, getCategories } = useCategoryStore();
@@ -46,21 +39,26 @@ function Index() {
   return (
     <header>
       <div className="py-[10px] bg-[#F0F0F0]">
-        <Container>
+      <Container>
           <div className="flex justify-between items-center">
             <ul className="flex items-center gap-[20px]">
-              {listItems.map(item => (
-                <li 
-                  key={item.id} 
-                  className={`text-[14px] font-medium cursor-pointer ${activeItemId === item.id ? 'active' : 'red'}`}
-                  onClick={() => setActiveItemId(item.id)}
-                >
-                  {item.name}
-                </li>
-              ))}
+              <Link href={"/about"}>
+                  <li className="text-[14px] font-medium cursor-pointer">
+                    Biz Haqimizda
+                  </li>
+              </Link>
+              <li className="text-[14px] font-medium cursor-pointer">
+                Yetkazib berish
+              </li>
+              <li className="text-[14px] font-medium cursor-pointer">
+                Shartnoma shartlari
+              </li>
+              <li className="text-[14px] font-medium cursor-pointer">
+                Bizning kafolatlar
+              </li>
             </ul>
             <ul className="flex items-center gap-[15px]">
-              <li className="text-[14px] font-medium">+998 91 043 45 49</li>
+              <li className="text-[14px] font-medium ">+998 71 300 30 30</li>
               <li className="px-[10px] py-[4px] bg-[white] rounded-lg cursor-pointer font-medium text-[#240E0066]">
                 Rus
               </li>

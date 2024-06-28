@@ -4,6 +4,7 @@ import Container from "../../components/container/page";
 import ProductCard from "../../components/products/page";
 import { Slider } from "antd";
 import { Radio } from "antd";
+import Link from "next/link";
 import "./style.css";
 
 function Index() {
@@ -26,6 +27,18 @@ function Index() {
 
   return (
     <div>
+      <Container>
+        <p className="flex gap-[20px] mt-[20px]">
+          <Link href={"/"}>
+            <span className="block px-[18px] py-[6px] rounded bg-[#F5F5F5] text-[#240E0066] font-medium">
+              Bosh sahifa
+            </span>
+          </Link>
+          <span className="block px-[18px] py-[6px] rounded bg-[white] font-medium">
+            Smartfonlar
+          </span>
+        </p>
+      </Container>
       <div className="mt-[24px]">
         <Container>
           <div className="flex gap-[48px] justify-between">

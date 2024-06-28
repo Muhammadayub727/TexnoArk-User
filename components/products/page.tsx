@@ -28,9 +28,11 @@ function page() {
           1 045 000 somdan/12 oy
         </p>
         <div className="flex items-center gap-[10px]">
-          <Button className="btn_product">
-            Savat<ShoppingCartOutlined />
-          </Button>
+          <Link href={"/cart"}>
+            <Button className="btn_product">
+              Savat<ShoppingCartOutlined />
+            </Button>
+          </Link>
           <Badge>
             <Avatar
               shape="square"

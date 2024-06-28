@@ -106,27 +106,29 @@ function Index() {
             </div>
 
             <div className={`w-[100%] flex gap-[80px] absolute bg-[#fff] left-0 z-20 py-[30px] px-[20px] ${open ? 'drawer open' : 'drawer'}`}>
-              <div>
-                {categories.map((e, i) => (
-                  <div 
-                    key={i} 
-                    onClick={() => getSub(e.id)} 
-                    className="hover:bg-[#FF6F14] duration-500 hover:text-white mt-[10px] flex items-center justify-between w-[440px] h-[50px] py-[35px] px-[59px] bg-[#F0F0F0] rounded-xl cursor-pointer card"
-                  >
-                    <BuildOutlined className="w-[60px] h-[60px] text-[20px]" />
-                    <p>{e.name}</p>
-                    <BuildOutlined />
-                  </div>
-                ))}
-              </div>
-              <div className="mt-[7px] border-l-[1px] pl-[60px]">
-                <p className="text-[27px] font-bold mb-[20px]">Tovarlar</p>
-                {subcategories.map((e, i) => (
-                  <div key={i}>
-                    <p className="font-semibold text-[16px] mb-4 cursor-pointer">{e.name}</p>
-                  </div>
-                ))}
-              </div>
+              <Link href={"/category"}>
+                <div>
+                  {categories.map((e, i) => (
+                    <div 
+                      key={i} 
+                      onClick={() => getSub(e.id)} 
+                      className="hover:bg-[#FF6F14] duration-500 hover:text-white mt-[10px] flex items-center justify-between w-[440px] h-[50px] py-[35px] px-[59px] bg-[#F0F0F0] rounded-xl cursor-pointer card"
+                    >
+                      <BuildOutlined className="w-[60px] h-[60px] text-[20px]" />
+                      <p>{e.name}</p>
+                      <BuildOutlined />
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-[7px] border-l-[1px] pl-[60px]">
+                  <p className="text-[27px] font-bold mb-[20px]">Tovarlar</p>
+                  {subcategories.map((e, i) => (
+                    <div key={i}>
+                      <p className="font-semibold text-[16px] mb-4 cursor-pointer">{e.name}</p>
+                    </div>
+                  ))}
+                </div>
+              </Link>
             </div>
 
             <div className="flex items-center gap-[15px]">

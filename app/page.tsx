@@ -15,27 +15,24 @@ import Huawei from "@/assets/huawei.png"
 import Artel from "@/assets/Artel.png"
 import Link from 'next/link';
 
-
-
-
 export default function Home() {
-  //Datas
+  // Datas
   const data = [
-    { id: 1, name: "Smartfonlar",img:Apple},
-    { id: 2, name: "Televizorlar"},
-    { id: 3, name: "Muzlatkichlar"},
-    { id: 4, name: "Konditsanerlar"},
+    { id: 1, name: "Smartfonlar", img: Apple },
+    { id: 2, name: "Televizorlar" },
+    { id: 3, name: "Muzlatkichlar" },
+    { id: 4, name: "Konditsanerlar" },
     { id: 5, name: "Kir yuvish mashinasi" },
-    { id: 6, name: "Barcha Mahsulotlar"},
+    { id: 6, name: "Barcha Mahsulotlar" },
   ];
 
   const dataAnimation = [
-    {title: "Apple" , bg: "#fff" , img: Apple},
-    {title: "Huawei" , bg: "#fff" , img: Huawei},
-    {title:"Artel", bg: "#fff" , img:Artel },
-    {title: "Apple" , bg: "#fff" , img: Apple},
-    {title: "Huawei" , bg: "#fff" , img: Huawei},
-    {title:"Artel", bg: "#fff" , img:Artel },
+    { title: "Apple", bg: "#fff", img: Apple },
+    { title: "Huawei", bg: "#fff", img: Huawei },
+    { title: "Artel", bg: "#fff", img: Artel },
+    { title: "Apple", bg: "#fff", img: Apple },
+    { title: "Huawei", bg: "#fff", img: Huawei },
+    { title: "Artel", bg: "#fff", img: Artel },
   ];
 
   const { categories, getCategories } = useCategoryStore();
@@ -43,7 +40,7 @@ export default function Home() {
 
   useEffect(() => {
     getCategories();
-  });
+  }, [getCategories]);
 
   return (
     <>
@@ -54,12 +51,9 @@ export default function Home() {
       <div className="mt-[60px]">
         <Container>
           <div className="flex items-center flex-wrap justify-between gap-[20px]">
-            {data.map((item, i) => (
-              <Link href={"/category"}>
-                  <div
-                  key={item.id}
-                  className="flex items-center justify-between w-[440px] h-[120px] py-[45px] px-[59px] bg-white rounded-xl cursor-pointer card"
-                >
+            {data.map((item) => (
+              <Link key={item.id} href={"/category"}>
+                <div className="flex items-center justify-between w-[440px] h-[120px] py-[45px] px-[59px] bg-white rounded-xl cursor-pointer card">
                   <BuildOutlined className="w-[60px] h-[60px] bg-[#FF800B1A] rounded-full p-[20px] text-[#D55200]" />
                   <p>{item.name}</p>
                   <ArrowRightOutlined />
@@ -123,8 +117,7 @@ export default function Home() {
           <div className="mt-[24px] grid grid-cols-6 gap-[20px]">
             {dataAnimation.map((item, index) => (
               <div key={index} className="flex items-center p-[20px] bg-white rounded-xl">
-                <Image src={item.img} alt={item.title}  className='ml-[50px] w-[70px]' />
-                
+                <Image src={item.img} alt={item.title} className="ml-[50px] w-[70px]" />
               </div>
             ))}
           </div>
@@ -138,7 +131,7 @@ export default function Home() {
               <p className="text-[18px] text-blue-500">Mahsulot yoqmadi - pulni qaytarib beramiz</p>
               <h2 className="text-[36px] text-blue-500 font-[900]">Kamchilik bormi yoki etkazib berishda mahsulot yoqmadimi?</h2>
             </div>
-            <Image src={Footer_Banner} alt="img" width={240} height={240}/>
+            <Image src={Footer_Banner} alt="img" width={240} height={240} />
           </div>
         </Container>
       </div>

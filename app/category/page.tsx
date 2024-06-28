@@ -7,20 +7,19 @@ import { Radio } from "antd";
 import "./style.css";
 
 function Index() {
-     const [slide1, setSlide1] = useState(1000000); // Default value in millions
-    const [slide2, setSlide2] = useState(51000000); // Default value in millions
+    const [slide1, setSlide1] = useState(1000); 
+    const [slide2, setSlide2] = useState(7010000);
 
-    // Function to convert slider values from million range to 0-100 range and vice versa
-    const convertToSliderValue = (value: any) =>
-      Math.round((value - 1000000) / 90000);
-    const convertToMillionValue = (value: any) => value * 500000 + 1000000;
+    const convertToSliderValue = (value:any) =>
+      Math.round((value - 1000) / 700990);
+    const convertToMillionValue = (value:any) => value * 70000000 + 1000;
 
     const onChange = (value:any) => {
       setSlide1(convertToMillionValue(value[0]));
       setSlide2(convertToMillionValue(value[1]));
     };
 
-    const onChangeComplete = (value:any) => {
+    const onAfterChange = (value:any) => {
       setSlide1(convertToMillionValue(value[0]));
       setSlide2(convertToMillionValue(value[1]));
     };
@@ -60,7 +59,7 @@ function Index() {
                 ]}
                 tooltipVisible={false} // Disable tooltip
                 onChange={onChange}
-                onChangeComplete={onChangeComplete}
+                onAfterChange={onAfterChange}
               />
 
               <div>

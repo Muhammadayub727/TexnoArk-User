@@ -79,3 +79,15 @@
   .product-carousel .slick-next {
     right: 10px; /* Adjust the position if necessary */
   } 
+
+.p-product{
+    width: 405px;
+    color: var(--Asosiy-White, #FFF);
+    font-family: Outfit;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    background-color:#D55200;
+    line-height: 44px; 
+    
+}

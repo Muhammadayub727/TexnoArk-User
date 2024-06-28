@@ -9,8 +9,8 @@ import Image from "next/image";
 import Deliviry from "@/assets/deliviry.svg";
 import Store from "@/assets/store.png";
 import Clock from "@/assets/clock.png"
-import { UserOutlined } from "@ant-design/icons";
 import Swiper from '../../components/swiper/page'
+import Shivaki from '@/assets/shivaki.svg'
 
 function Product() {
   const images = [
@@ -226,18 +226,9 @@ function Product() {
                   </div>
                 </div>
             </div>
-            <div className="w-[520px] h-[542px] bg-red-500">
-            {/* <Carousel arrows infinite={true} autoplay={true} className='rounded-lg overflow-hidden product-carousel mt-[40px]'>   
-                  <div className='carousel'>
-                      <Image src={Banner3} alt="Banner"/>
-                  </div>
-                  <div className='carousel'>
-                      <Image src={Banner3} alt="Banner"/>
-                  </div>
-                  <div className='carousel'>
-                      <Image src={Banner3} alt="Banner"/>
-                  </div>    
-            </Carousel> */}
+            <div className="w-[520px] h-[542px] bg-white rounded-[7px]">
+              <Image src={Shivaki} alt="Dastur" className="ml-[70px] mt-[100px]"/>
+              <h3 className="p-product">Shivakini mahsulotlaridan harid qiling </h3>
             </div>
           </div>
         </Container>

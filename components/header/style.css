@@ -1,4 +1,4 @@
-/* .category_btn:hover {
+.category_btn:hover {
     background-color: #1EB91E !important;
     color: white !important;
     border-color: #1EB91E !important;
@@ -34,61 +34,4 @@
     color: white;
     border-color: red;
   }
-   */
-
-   .category_btn:hover {
-    background-color: #1EB91E !important;
-    color: white !important;
-    border-color: #1EB91E !important;
-    transition: none !important;
-
-}
-
-.search_input{
-    width: 500px;
-    min-width: 200px !important;
-    height: 46px;
-    padding: 16px 30px;
-    font-size: 16px;
-    font-weight: 500;
-    background-color: #F0F0F0 !important;
-    border: none;
-}
-
-/* style.css */
-.drawer {
-    margin-top: 50px;
-    opacity: 0;
-    visibility: hidden;
-  }
   
-  .drawer.open {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-  
-  .close-icon-btn {
-    background-color: red;
-    color: white;
-    border-color: red;
-  }
-
-@media screen and (max-width: 1024px) {
-  .header-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .header-top {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  .header-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-}

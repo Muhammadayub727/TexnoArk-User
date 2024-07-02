@@ -54,3 +54,17 @@
 .datas::-webkit-scrollbar {
     display: none;  
 }
+
+/* style.css */
+@media screen and (max-width: 1024px) {
+  .product-card {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

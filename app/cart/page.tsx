@@ -3,16 +3,21 @@ import React from 'react'
 import Container from '../../components/container/page'
 import Card from '@/components/cart/page'
 import Swiper from '../../components/swiper/page'
+import Link from 'next/link'
 
-export default function page() {
+export default function Page() {
     return (
         <>
             <div>
                 <Container>
                     <p className="flex gap-[10px] mt-[20px]">
-                        <span className="block px-[18px] py-[6px] rounded bg-[#F5F5F5] text-[#240E0066] font-medium">
-                            Bosh sahifa
-                        </span>
+                        <Link href="/">
+                        <Link href={"/"}>
+                            <a className="block px-[18px] py-[6px] rounded bg-[#F5F5F5] text-[#240E0066] font-medium">
+                                Bosh sahifa
+                            </a>
+                        </Link>
+                        </Link>
                         <span className="block px-[18px] py-[6px] rounded bg-[white] font-medium">
                             Savat
                         </span>

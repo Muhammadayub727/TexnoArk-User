@@ -1,5 +1,6 @@
 import { DeleteOutlined, HeartOutlined } from '@ant-design/icons';
 import React, { useState } from 'react';
+import Link from 'next/link';
 import './style.css'; // Assuming you have a CSS file for styles
 
 function Page() {
